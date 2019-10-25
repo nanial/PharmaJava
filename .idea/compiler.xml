@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PharmaJava" />
+        <module name="Pharma" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="PharmaJava" target="1.5" />
+      <module name="Pharma" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="PharmaJava" options="" />
+      <module name="Pharma" options="" />
     </option>
   </component>
 </project>
