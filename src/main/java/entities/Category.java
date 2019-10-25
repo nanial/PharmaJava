@@ -3,7 +3,9 @@ package entities;
 import javax.persistence.Entity;
 
 @Entity
+
 public class Category {
+
     private  Integer id;
     private  String name;
     private Integer sortOrder;
@@ -38,5 +40,16 @@ public class Category {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Category{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sortOrder=" + sortOrder +
+                ", status=" + status +
+                '}';
     }
 }

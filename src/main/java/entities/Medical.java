@@ -3,7 +3,9 @@ package entities;
 import javax.persistence.Entity;
 
 @Entity
+
 public class Medical {
+
     private String nameOfMedical;
     private String annotation;
     private Integer manufacturesID;
@@ -56,5 +58,17 @@ public class Medical {
 
     public void setUnitName(String unitName) {
         this.unitName = unitName;
+    }
+
+    @Override
+    public String toString() {
+        return "Medical{" +
+                "nameOfMedical='" + nameOfMedical + '\'' +
+                ", annotation='" + annotation + '\'' +
+                ", manufacturesID=" + manufacturesID +
+                ", unitOfMeasure='" + unitOfMeasure + '\'' +
+                ", id=" + id +
+                ", unitName='" + unitName + '\'' +
+                '}';
     }
 }

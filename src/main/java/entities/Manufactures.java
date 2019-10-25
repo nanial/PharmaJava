@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.Entity;
 
 @Entity
+
 public class Manufactures {
     private Integer id;
     private String nameOfManufactures;
@@ -38,5 +39,15 @@ public class Manufactures {
 
     public void setAccount(String account) {
         this.account = account;
+    }
+
+    @Override
+    public String toString() {
+        return "Manufactures{" +
+                "id=" + id +
+                ", nameOfManufactures='" + nameOfManufactures + '\'' +
+                ", country='" + country + '\'' +
+                ", account='" + account + '\'' +
+                '}';
     }
 }

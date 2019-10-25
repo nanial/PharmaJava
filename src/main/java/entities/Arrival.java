@@ -3,8 +3,11 @@ package entities;
 import javax.persistence.Entity;
 import java.util.Date;
 
+
 @Entity
+
 public class Arrival {
+
     private Integer id;
     private Date dateOfArrival;
     private Integer supplierID;
@@ -39,5 +42,16 @@ public class Arrival {
 
     public void setRelatedDocument(String relatedDocument) {
         this.relatedDocument = relatedDocument;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Arrival{" +
+                "id=" + id +
+                ", dateOfArrival=" + dateOfArrival +
+                ", supplierID=" + supplierID +
+                ", relatedDocument='" + relatedDocument + '\'' +
+                '}';
     }
 }
