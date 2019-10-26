@@ -9,7 +9,9 @@ import java.sql.*;
 import java.util.Enumeration;
 
 @WebServlet(name = "PostParametrsServlet", urlPatterns = {"/postParametrServ"})
+
 public class PostParametrsServlet extends GenericServlet {
+
       public void service(ServletRequest request, ServletResponse response)
               throws ServletException, IOException{
           PrintWriter printWriter = response.getWriter();
